@@ -7,6 +7,7 @@
     <title>Movies OOP</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/M6Irinel/Framkcss@fe19a446685bc7be1640b8e44a566588f68cdbc7/Framkcss-light.css">
+    <link rel="stylesheet" href="./assets/style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
 

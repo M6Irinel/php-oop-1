@@ -1,10 +1,13 @@
 <?php
+
 include_once __DIR__ . '/components/movies-array.php';
 include_once __DIR__ . '/components/movie.php';
+include_once __DIR__ . '/components/actor.php';
+
 
 $arr_movies = [];
 foreach ($movies as $v) {
-    $arr_movies[] = new Movie($v['name'], $v['main_actor'], $v['year'], $v['personage'], $v['poster']);
+    $arr_movies[] = new Movie($v['name'], $v['main_actor'], $v['year'], $v['personage'], $v['poster'], $v['actors']);
 }
 
 ?>
@@ -20,17 +23,59 @@ include_once __DIR__ . '/components/head.php';
     <section>
         <div class="container">
             <ul class="row row-10-xl gap-25">
+
                 <?php foreach ($arr_movies as $v) : ?>
-                    <li class="col-6 col-4-md col-3-lg col-2-xl bg-orange-7 border rounded-3 shadow-4-dark p-2 t-center transition-all duration-3 bg-orange-6-H shadow-5-light-H scale-H">
+                    <li class="col-6 col-4-md col-3-lg col-2-xl bg-orange-7 border rounded-3 shadow-4-dark p-2 t-center transition-all duration-3 bg-orange-6-H shadow-5-light-H scale-H flex f-column">
+
                         <div>
                             <img class="obj-cover w-100 aspect-ratio-1 obj-top" src="<?= $v->poster; ?>" alt="<?= $v->name; ?>">
                         </div>
-                        <h2 class="pt-3 pb-3 white"><?= $v->name; ?></h2>
-                        <p class="py-1">Pubblicato il <span class="white bold"><?= $v->year; ?></span></p>
-                        <h4>Attore principale: <span class="block py-1 white"><?= $v->main_actor; ?></span></h4>
-                        <p>nel ruolo di: <span class="block bold py-1 white"><?= $v->personage; ?></span></p>
+
+                        <h2 class="pt-3 pb-3 white">
+                            <?= $v->name; ?>
+                        </h2>
+
+                        <p class="py-1">
+                            Pubblicato il
+                            <span class="white bold">
+                                <?= $v->year; ?>
+                            </span>
+                        </p>
+
+                        <h4>
+                            Attore principale:
+                            <span class="block py-1 white">
+                                <?= $v->main_actor; ?>
+                            </span>
+                        </h4>
+
+                        <p>
+                            nel ruolo di:
+                            <span class="block bold py-1 white">
+                                <?= $v->personage; ?>
+                            </span>
+                        </p>
+
+                        <div class="look mt-auto flex f-column between relative">
+
+                            <h4 class="mb-1 mt-auto">Attori del film:</h4>
+
+                            <div class="bg-violet-8 cursor-pointer">▼</div>
+
+                            <ul class="actors remove absolute bg-orange-5 bottom left right py-3 border-t border-l border-r">
+
+                                <?php foreach ($v->actors as $actor) : ?>
+                                    <li>
+                                        <?= $actor; ?>
+                                    </li>
+                                <?php endforeach; ?>
+
+                            </ul>
+                        </div>
                     </li>
+
                 <?php endforeach; ?>
+
             </ul>
         </div>
     </section>
@@ -40,5 +85,5 @@ include_once __DIR__ . '/components/head.php';
 
 <?php
 // Questo è il contenuto del footer
-include_once __DIR__.'/components/footer.php';
+include_once __DIR__ . '/components/footer.php';
 ?>
