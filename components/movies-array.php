@@ -8,14 +8,38 @@ $movies = [
         'personage' => 'Tony Stark',
         'poster' => 'https://m.media-amazon.com/images/I/515wjJQt2nL._SY445_.jpg',
         'actors' => [
-            'Robert John Downey Jr',
-            'Jon Favreau',
-            'Gwyneth Paltrow',
-            'Jeaff Bridges',
-            'Terrence Howard',
-            'Leslie Bibb',
-            'Paul Bettany',
-            'Stan Lee'
+            [
+                'name' => 'Robert John Downey Jr',
+                'role' => 'Tony Stark'
+            ],
+            [
+                'name' => 'Jon Favreau',
+                'role' => 'Happy Hogan'
+            ],
+            [
+                'name' => 'Gwyneth Paltrow',
+                'role' => 'Pepper Potts'
+            ],
+            [
+                'name' => 'Jeaff Bridges',
+                'role' => 'Iron Monger'
+            ],
+            [
+                'name' => 'Terrence Howard',
+                'role' => 'War Machine'
+            ],
+            [
+                'name' => 'Leslie Bibb',
+                'role' => 'Christine Everhart'
+            ],
+            [
+                'name' => 'Paul Bettany',
+                'role' => 'Jarvis'
+            ],
+            [
+                'name' => 'Stan Lee',
+                'role' => 'Stan Lee'
+            ]
         ]
     ],
     [
@@ -25,14 +49,38 @@ $movies = [
         'personage' => 'Owen Grady',
         'poster' => '',
         'actors' => [
-            'Bryce Dallas Howard',
-            'Chris Pratt',
-            'Jeff Goldblum',
-            'Laura Dern',
-            'Sam Neill',
-            'DeWanda Wise',
-            'Isabella Sermon',
-            'Omar Sy'
+            [
+                'name' => 'Bryce Dallas Howard',
+                'role' => 'Claire'
+            ],
+            [
+                'name' => 'Chris Pratt',
+                'role' => 'Owen Grady'
+            ],
+            [
+                'name' => 'Jeff Goldblum',
+                'role' => 'Ian Malcolm'
+            ],
+            [
+                'name' => 'Laura Dern',
+                'role' => 'Ellie Sattler'
+            ],
+            [
+                'name' => 'Sam Neill',
+                'role' => 'Alan Grant'
+            ],
+            [
+                'name' => 'DeWanda Wise',
+                'role' => 'Kayla Watts'
+            ],
+            [
+                'name' => 'Isabella Sermon',
+                'role' => 'Maisie Lockwood'
+            ],
+            [
+                'name' => 'Omar Sy',
+                'role' => 'Barry'
+            ]
         ]
     ],
     [
@@ -42,15 +90,42 @@ $movies = [
         'personage' => 'Ray Gaines',
         'poster' => 'https://pad.mymovies.it/filmclub/2014/12/072/locandina.jpg',
         'actors' => [
-            'Dwayne Johnson',
-            'Alexandra Daddario',
-            'Carla Gugino',
-            'Paul Giamatti',
-            'Hugo Johnstone',
-            'Archie Panjabi',
-            'Ioan Gruffudd',
-            'Art Parkinson',
-            'Oleh Yutgof'
+            [
+                'name' => 'Dwayne Johnson',
+                'role' => 'Ray Gaines'
+            ],
+            [
+                'name' => 'Alexandra Daddario',
+                'role' => 'Black Gaines'
+            ],
+            [
+                'name' => 'Carla Gugino',
+                'role' => 'Emma Gaines'
+            ],
+            [
+                'name' => 'Paul Giamatti',
+                'role' => 'Dr. Lawrence Hayes'
+            ],
+            [
+                'name' => 'Hugo Johnstone',
+                'role' => 'Ben Taylor'
+            ],
+            [
+                'name' => 'Archie Panjabi',
+                'role' => 'Serena Johnson'
+            ],
+            [
+                'name' => 'Ioan Gruffudd',
+                'role' => 'Daniel Riddick'
+            ],
+            [
+                'name' => 'Art Parkinson',
+                'role' => 'Oliver Taylor'
+            ],
+            [
+                'name' => 'Oleh Yutgof',
+                'role' => 'Alexi'
+            ]
         ]
     ],
     [
@@ -60,14 +135,38 @@ $movies = [
         'personage' => 'Brian O\'Conner',
         'poster' => 'https://musicart.xboxlive.com/7/3ed90f00-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080',
         'actors' => [
-            'Paul Walker',
-            'Tyrese Gibson',
-            'Devon Aoki',
-            'Eva Mendes',
-            'Cole Hauser',
-            'Ludacris',
-            'Amaury Nolasco',
-            'Michael Ealy'
+            [
+                'name' => 'Paul Walker',
+                'role' => 'Brian O\'Conner'
+            ],
+            [
+                'name' => 'Tyrese Gibson',
+                'role' => 'Roman Pearce'
+            ],
+            [
+                'name' => 'Devon Aoki',
+                'role' => 'Suki'
+            ],
+            [
+                'name' => 'Eva Mendes',
+                'role' => 'Monica Fuentes'
+            ],
+            [
+                'name' => 'Cole Hauser',
+                'role' => 'Carter Verone'
+            ],
+            [
+                'name' => 'Ludacris',
+                'role' => 'Tej Parker'
+            ],
+            [
+                'name' => 'Amaury Nolasco',
+                'role' => 'Orange Julius'
+            ],
+            [
+                'name' => 'Michael Ealy',
+                'role' => 'Slap Jack'
+            ]
         ]
     ],
     [
@@ -77,14 +176,38 @@ $movies = [
         'personage' => 'Will Salas',
         'poster' => 'https://pad.mymovies.it/filmclub/2011/07/182/locandina.jpg',
         'actors' => [
-            'Justin Timberlake',
-            'Amanda Seyfried',
-            'Cillian Murphy',
-            'Olivia Wilde',
-            'Alex Pettyfer',
-            'Matt Bomer',
-            'Vincent',
-            'Johnny Galecki'
+            [
+                'name' => 'Justin Timberlake',
+                'role' => 'Will Salas'
+            ],
+            [
+                'name' => 'Amanda Seyfried',
+                'role' => 'Sylvia Weis'
+            ],
+            [
+                'name' => 'Cillian Murphy',
+                'role' => 'Raymond Leon'
+            ],
+            [
+                'name' => 'Olivia Wilde',
+                'role' => 'Rachel Salas'
+            ],
+            [
+                'name' => 'Alex Pettyfer',
+                'role' => 'Fortis'
+            ],
+            [
+                'name' => 'Matt Bomer',
+                'role' => 'Henry Hamilton'
+            ],
+            [
+                'name' => 'Vincent',
+                'role' => 'Philippe Weis'
+            ],
+            [
+                'name' => 'Johnny Galecki',
+                'role' => 'Borel'
+            ]
         ]
     ],
     [
@@ -94,14 +217,38 @@ $movies = [
         'personage' => 'Neo',
         'poster' => '',
         'actors' => [
-            'Keanu Reeves',
-            'Carrie-Anne Moss',
-            'Laurence Fishburne',
-            'Hugo Weaving',
-            'Gloria Foster',
-            'Marcus Chong',
-            'Joe Pantoliano',
-            'Matt Doran'
+            [
+                'name' => 'Keanu Reeves',
+                'role' => 'Neo'
+            ],
+            [
+                'name' => 'Carrie-Anne Moss',
+                'role' => 'Trinity, Trinity'
+            ],
+            [
+                'name' => 'Laurence Fishburne',
+                'role' => 'Morpheus'
+            ],
+            [
+                'name' => 'Hugo Weaving',
+                'role' => 'Smith'
+            ],
+            [
+                'name' => 'Gloria Foster',
+                'role' => 'Oracolo'
+            ],
+            [
+                'name' => 'Marcus Chong',
+                'role' => 'Tank'
+            ],
+            [
+                'name' => 'Joe Pantoliano',
+                'role' => 'Cypher'
+            ],
+            [
+                'name' => 'Matt Doran',
+                'role' => 'Mouse'
+            ]
         ]
     ],
     [
@@ -111,14 +258,38 @@ $movies = [
         'personage' => 'Jake Sully',
         'poster' => 'https://www.triestecinema.it/locandine/AVATAR%202.jpg',
         'actors' => [
-            'Zoe Saldana',
-            'Sam Worthington',
-            'Sigourney Weaver',
-            'Giovanni Ribisi',
-            'Michelle Rodriguez',
-            'Laz Alonso',
-            'Wes Studi',
-            'Joel David Moore'
+            [
+                'name' => 'Zoe Saldana',
+                'role' => 'Neytiri'
+            ],
+            [
+                'name' => 'Sam Worthington',
+                'role' => 'Jake Sully, Tommy'
+            ],
+            [
+                'name' => 'Sigourney Weaver',
+                'role' => 'Grace Augustine'
+            ],
+            [
+                'name' => 'Giovanni Ribisi',
+                'role' => 'Parker Selfridge'
+            ],
+            [
+                'name' => 'Michelle Rodriguez',
+                'role' => 'Trudy Chacòn'
+            ],
+            [
+                'name' => 'Laz Alonso',
+                'role' => 'Tsu\'tey'
+            ],
+            [
+                'name' => 'Wes Studi',
+                'role' => 'Eytucan'
+            ],
+            [
+                'name' => 'Joel David Moore',
+                'role' => 'Norm Spellman'
+            ]
         ]
     ]
 ];

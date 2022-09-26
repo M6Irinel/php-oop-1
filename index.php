@@ -7,8 +7,26 @@ include_once __DIR__ . '/components/actor.php';
 
 $arr_movies = [];
 foreach ($movies as $v) {
-    $arr_movies[] = new Movie($v['name'], $v['main_actor'], $v['year'], $v['personage'], $v['poster'], $v['actors']);
+    $arr_movies[] = new Movie(
+        $v['name'],
+        $v['main_actor'],
+        $v['year'],
+        $v['personage'],
+        $v['poster'],
+        actorsArray($v['actors'])
+    );
 }
+
+function actorsArray($actors)
+{
+    return array_map(
+        function ($a) {
+            return new Actor($a['name'], $a['role']);
+        },
+        $actors
+    );
+}
+
 
 ?>
 
@@ -62,11 +80,16 @@ include_once __DIR__ . '/components/head.php';
 
                             <div class="bg-violet-8 cursor-pointer">▼</div>
 
-                            <ul class="actors remove absolute bg-orange-5 bottom left right py-3 border-t border-l border-r">
+                            <ul class="actors remove absolute bg-orange-5 bottom left right">
 
                                 <?php foreach ($v->actors as $actor) : ?>
-                                    <li>
-                                        <?= $actor; ?>
+                                    <li class="border py-1">
+                                        <p>
+                                            <?= $actor->name; ?>
+                                        </p>
+                                        <p>
+                                            <?= $actor->role; ?>
+                                        </p>
                                     </li>
                                 <?php endforeach; ?>
 
