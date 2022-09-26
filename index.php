@@ -21,7 +21,7 @@ function actorsArray($actors)
 {
     return array_map(
         function ($a) {
-            return new Actor($a['name'], $a['role']);
+            return new Actor($a['name'], $a['role'], $a['genre']);
         },
         $actors
     );
@@ -36,14 +36,25 @@ include_once __DIR__ . '/components/head.php';
 ?>
 
 
+<?php
+include_once __DIR__.'/components/set-actor.php';
+
+// Aggiungi nuovo attore
+addNewActor($arr_movies, 1, 'carlo', 'bello', 'M');
+
+// Rimuovi attore
+removeActor($arr_movies, 3, 'devon aoki');
+?>
+
+
 
 <main class="mb-8">
     <section>
-        <div class="container">
+        <div class="container px-2">
             <ul class="row row-10-xl gap-25">
 
                 <?php foreach ($arr_movies as $v) : ?>
-                    <li class="col-6 col-4-md col-3-lg col-2-xl bg-orange-7 border rounded-3 shadow-4-dark p-2 t-center transition-all duration-3 bg-orange-6-H shadow-5-light-H scale-H flex f-column">
+                    <li class="col-6 col-4-md col-3-lg col-2-xl bg-orange-7 border rounded-3 shadow-4-dark p-2 t-center transition-all duration-3 bg-orange-6-H shadow-5-light-H scale-lg-H flex f-column">
 
                         <div>
                             <img class="obj-cover w-100 aspect-ratio-1 obj-top" src="<?= $v->poster; ?>" alt="<?= $v->name; ?>">
@@ -76,19 +87,22 @@ include_once __DIR__ . '/components/head.php';
 
                         <div class="look mt-auto flex f-column between relative">
 
-                            <h4 class="mb-1 mt-auto">Attori del film:</h4>
+                            <h4 class="mb-1 mt-auto">Alcuni attori del film:</h4>
 
                             <div class="bg-violet-8 cursor-pointer">▼</div>
 
                             <ul class="actors remove absolute bg-orange-5 bottom left right">
 
                                 <?php foreach ($v->actors as $actor) : ?>
-                                    <li class="border py-1">
-                                        <p>
+                                    <li class="border py-1 px-1">
+                                        <p class="bold">
                                             <?= $actor->name; ?>
                                         </p>
-                                        <p>
+                                        <p class="flex between">
                                             <?= $actor->role; ?>
+                                            <span class="bold">
+                                                <?= $actor->genre; ?>
+                                            </span>
                                         </p>
                                     </li>
                                 <?php endforeach; ?>

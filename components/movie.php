@@ -19,19 +19,46 @@ class Movie
         $this->controlActors($actors);
     }
 
+
     function havePoster($poster)
     {
-        if ($poster != '') {
+        if ($poster != '')
             $this->poster = $poster;
-        } else {
+        else
             $this->poster = 'https://demofree.sirv.com/nope-not-here.jpg';
-        }
     }
+
 
     function controlActors($actors)
     {
-        if (gettype($actors) == 'array') {
+        if (gettype($actors) == 'array')
             $this->actors = $actors;
+    }
+
+
+    public function addActor($actor)
+    {
+        foreach ($this->actors as $v)
+            if ($v->name == $actor->name)
+                return;
+
+        $this->actors[] = $actor;
+    }
+
+
+    public function removeActor($actor)
+    {
+        $a = [];
+
+        foreach ($this->actors as $v) {
+            global $a;
+
+            if (strtolower($v->name) == strtolower($actor->name))
+                continue;
+
+            $a[] = $v;
         }
+
+        $this->actors = $a;
     }
 }

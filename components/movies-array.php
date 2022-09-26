@@ -10,35 +10,43 @@ $movies = [
         'actors' => [
             [
                 'name' => 'Robert John Downey Jr',
-                'role' => 'Tony Stark'
+                'role' => 'Tony Stark',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Jon Favreau',
-                'role' => 'Happy Hogan'
+                'role' => 'Happy Hogan',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Gwyneth Paltrow',
-                'role' => 'Pepper Potts'
+                'role' => 'Pepper Potts',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Jeaff Bridges',
-                'role' => 'Iron Monger'
+                'role' => 'Iron Monger',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Terrence Howard',
-                'role' => 'War Machine'
+                'role' => 'War Machine',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Leslie Bibb',
-                'role' => 'Christine Everhart'
+                'role' => 'Christine Everhart',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Paul Bettany',
-                'role' => 'Jarvis'
+                'role' => 'Jarvis',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Stan Lee',
-                'role' => 'Stan Lee'
+                'role' => 'Stan Lee',
+                'genre' => 'M'
             ]
         ]
     ],
@@ -51,35 +59,43 @@ $movies = [
         'actors' => [
             [
                 'name' => 'Bryce Dallas Howard',
-                'role' => 'Claire'
+                'role' => 'Claire',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Chris Pratt',
-                'role' => 'Owen Grady'
+                'role' => 'Owen Grady',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Jeff Goldblum',
-                'role' => 'Ian Malcolm'
+                'role' => 'Ian Malcolm',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Laura Dern',
-                'role' => 'Ellie Sattler'
+                'role' => 'Ellie Sattler',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Sam Neill',
-                'role' => 'Alan Grant'
+                'role' => 'Alan Grant',
+                'genre' => 'M'
             ],
             [
                 'name' => 'DeWanda Wise',
-                'role' => 'Kayla Watts'
+                'role' => 'Kayla Watts',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Isabella Sermon',
-                'role' => 'Maisie Lockwood'
+                'role' => 'Maisie Lockwood',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Omar Sy',
-                'role' => 'Barry'
+                'role' => 'Barry',
+                'genre' => 'M'
             ]
         ]
     ],
@@ -92,39 +108,48 @@ $movies = [
         'actors' => [
             [
                 'name' => 'Dwayne Johnson',
-                'role' => 'Ray Gaines'
+                'role' => 'Ray Gaines',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Alexandra Daddario',
-                'role' => 'Black Gaines'
+                'role' => 'Black Gaines',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Carla Gugino',
-                'role' => 'Emma Gaines'
+                'role' => 'Emma Gaines',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Paul Giamatti',
-                'role' => 'Dr. Lawrence Hayes'
+                'role' => 'Dr. Lawrence Hayes',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Hugo Johnstone',
-                'role' => 'Ben Taylor'
+                'role' => 'Ben Taylor',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Archie Panjabi',
-                'role' => 'Serena Johnson'
+                'role' => 'Serena Johnson',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Ioan Gruffudd',
-                'role' => 'Daniel Riddick'
+                'role' => 'Daniel Riddick',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Art Parkinson',
-                'role' => 'Oliver Taylor'
+                'role' => 'Oliver Taylor',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Oleh Yutgof',
-                'role' => 'Alexi'
+                'role' => 'Alexi',
+                'genre' => 'M'
             ]
         ]
     ],
@@ -137,35 +162,43 @@ $movies = [
         'actors' => [
             [
                 'name' => 'Paul Walker',
-                'role' => 'Brian O\'Conner'
+                'role' => 'Brian O\'Conner',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Tyrese Gibson',
-                'role' => 'Roman Pearce'
+                'role' => 'Roman Pearce',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Devon Aoki',
-                'role' => 'Suki'
+                'role' => 'Suki',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Eva Mendes',
-                'role' => 'Monica Fuentes'
+                'role' => 'Monica Fuentes',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Cole Hauser',
-                'role' => 'Carter Verone'
+                'role' => 'Carter Verone',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Ludacris',
-                'role' => 'Tej Parker'
+                'role' => 'Tej Parker',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Amaury Nolasco',
-                'role' => 'Orange Julius'
+                'role' => 'Orange Julius',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Michael Ealy',
-                'role' => 'Slap Jack'
+                'role' => 'Slap Jack',
+                'genre' => 'M'
             ]
         ]
     ],
@@ -178,35 +211,43 @@ $movies = [
         'actors' => [
             [
                 'name' => 'Justin Timberlake',
-                'role' => 'Will Salas'
+                'role' => 'Will Salas',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Amanda Seyfried',
-                'role' => 'Sylvia Weis'
+                'role' => 'Sylvia Weis',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Cillian Murphy',
-                'role' => 'Raymond Leon'
+                'role' => 'Raymond Leon',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Olivia Wilde',
-                'role' => 'Rachel Salas'
+                'role' => 'Rachel Salas',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Alex Pettyfer',
-                'role' => 'Fortis'
+                'role' => 'Fortis',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Matt Bomer',
-                'role' => 'Henry Hamilton'
+                'role' => 'Henry Hamilton',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Vincent',
-                'role' => 'Philippe Weis'
+                'role' => 'Philippe Weis',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Johnny Galecki',
-                'role' => 'Borel'
+                'role' => 'Borel',
+                'genre' => 'M'
             ]
         ]
     ],
@@ -219,35 +260,43 @@ $movies = [
         'actors' => [
             [
                 'name' => 'Keanu Reeves',
-                'role' => 'Neo'
+                'role' => 'Neo',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Carrie-Anne Moss',
-                'role' => 'Trinity, Trinity'
+                'role' => 'Trinity, Trinity',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Laurence Fishburne',
-                'role' => 'Morpheus'
+                'role' => 'Morpheus',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Hugo Weaving',
-                'role' => 'Smith'
+                'role' => 'Smith',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Gloria Foster',
-                'role' => 'Oracolo'
+                'role' => 'Oracolo',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Marcus Chong',
-                'role' => 'Tank'
+                'role' => 'Tank',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Joe Pantoliano',
-                'role' => 'Cypher'
+                'role' => 'Cypher',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Matt Doran',
-                'role' => 'Mouse'
+                'role' => 'Mouse',
+                'genre' => 'M'
             ]
         ]
     ],
@@ -260,35 +309,43 @@ $movies = [
         'actors' => [
             [
                 'name' => 'Zoe Saldana',
-                'role' => 'Neytiri'
+                'role' => 'Neytiri',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Sam Worthington',
-                'role' => 'Jake Sully, Tommy'
+                'role' => 'Jake Sully, Tommy',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Sigourney Weaver',
-                'role' => 'Grace Augustine'
+                'role' => 'Grace Augustine',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Giovanni Ribisi',
-                'role' => 'Parker Selfridge'
+                'role' => 'Parker Selfridge',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Michelle Rodriguez',
-                'role' => 'Trudy Chacòn'
+                'role' => 'Trudy Chacòn',
+                'genre' => 'F'
             ],
             [
                 'name' => 'Laz Alonso',
-                'role' => 'Tsu\'tey'
+                'role' => 'Tsu\'tey',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Wes Studi',
-                'role' => 'Eytucan'
+                'role' => 'Eytucan',
+                'genre' => 'M'
             ],
             [
                 'name' => 'Joel David Moore',
-                'role' => 'Norm Spellman'
+                'role' => 'Norm Spellman',
+                'genre' => 'M'
             ]
         ]
     ]
