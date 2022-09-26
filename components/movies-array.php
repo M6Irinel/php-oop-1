@@ -3,8 +3,8 @@
 $movies = [
     [
         'name' => 'Iron Man',
-        'main_actor' => 'Robert John Downey Jr',
         'year' => 2008,
+        'main_actor' => 'Robert John Downey Jr',
         'personage' => 'Tony Stark',
         'poster' => 'https://m.media-amazon.com/images/I/515wjJQt2nL._SY445_.jpg',
         'actors' => [
@@ -52,10 +52,10 @@ $movies = [
     ],
     [
         'name' => 'Jurassic World - Il dominio',
-        'main_actor' => 'Chriss Pratt',
         'year' => 2022,
+        'main_actor' => 'Chriss Pratt',
         'personage' => 'Owen Grady',
-        'poster' => '',
+        'poster' => 'https://pad.mymovies.it/filmclub/2020/02/199/locandinapg2.jpg',
         'actors' => [
             [
                 'name' => 'Bryce Dallas Howard',
@@ -101,8 +101,8 @@ $movies = [
     ],
     [
         'name' => 'San Andreas',
-        'main_actor' => 'Dwayne Johnson.',
         'year' => 2015,
+        'main_actor' => 'Dwayne Johnson.',
         'personage' => 'Ray Gaines',
         'poster' => 'https://pad.mymovies.it/filmclub/2014/12/072/locandina.jpg',
         'actors' => [
@@ -155,8 +155,8 @@ $movies = [
     ],
     [
         'name' => 'Fast and Furious 2',
-        'main_actor' => 'Paul Walker',
         'year' => 2003,
+        'main_actor' => 'Paul Walker',
         'personage' => 'Brian O\'Conner',
         'poster' => 'https://musicart.xboxlive.com/7/3ed90f00-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080',
         'actors' => [
@@ -204,8 +204,8 @@ $movies = [
     ],
     [
         'name' => 'IN TIME',
-        'main_actor' => 'Justin Timberlake',
         'year' => 2011,
+        'main_actor' => 'Justin Timberlake',
         'personage' => 'Will Salas',
         'poster' => 'https://pad.mymovies.it/filmclub/2011/07/182/locandina.jpg',
         'actors' => [
@@ -252,11 +252,60 @@ $movies = [
         ]
     ],
     [
+        'name' => 'La notte del giudizio',
+        'year' => 2013,
+        'main_actor' => 'Ethan Hawke',
+        'personage' => 'James Sandin',
+        'poster' => 'https://images.everyeye.it/img-cover/anarchia-notte-giudizio-26450-320x450.jpg',
+        'actors' => [
+            [
+                'name' => 'Ethan Hawke',
+                'role' => 'James Sandin',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Lena Headey',
+                'role' => 'Mary Sandin',
+                'genre' => 'F'
+            ],
+            [
+                'name' => 'Adelaide Kane',
+                'role' => 'Zoey Sandin',
+                'genre' => 'F'
+            ],
+            [
+                'name' => 'Rhys Wakefield',
+                'role' => 'Leader dei purificatori',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Max Burkholder',
+                'role' => 'Charlie Sandin',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Edwin Hodge',
+                'role' => 'Dwayne',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Peter Gvozdas',
+                'role' => 'Dottor Peter Buynak',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Tony Oller',
+                'role' => 'Henry',
+                'genre' => 'M'
+            ]
+        ]
+    ],
+    [
         'name' => 'Matrix',
-        'main_actor' => 'Keanu Reeves',
         'year' => 1999,
+        'main_actor' => 'Keanu Reeves',
         'personage' => 'Neo',
-        'poster' => '',
+        'poster' => 'https://pad.mymovies.it/filmclub/2001/11/033/locandina.jpg',
         'actors' => [
             [
                 'name' => 'Keanu Reeves',
@@ -301,9 +350,107 @@ $movies = [
         ]
     ],
     [
+        'name' => 'Godzilla',
+        'year' => 2014,
+        'main_actor' => 'Aaron Taylor-Johnson',
+        'personage' => 'Tenente Ford Brody',
+        'poster' => 'https://m.media-amazon.com/images/I/51SbH-zxNQL._SY445_.jpg',
+        'actors' => [
+            [
+                'name' => 'Elizabeth Olsen',
+                'role' => 'Elle Brody',
+                'genre' => 'F'
+            ],
+            [
+                'name' => 'Aaron Taylor-Johnson',
+                'role' => 'Tenente Ford Brody',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Bryan Cranston',
+                'role' => 'Joe Brody',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Millie Bobby',
+                'role' => 'Brown',
+                'genre' => 'F'
+            ],
+            [
+                'name' => 'Ken Watanabe',
+                'role' => 'Dr. Ishirò Serizawa',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Jared Keeso',
+                'role' => 'Jump Master',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Sally Hawkins',
+                'role' => 'Vivienne Graham',
+                'genre' => 'F'
+            ],
+            [
+                'name' => 'Juliette Binoche',
+                'role' => 'Sandra Brody',
+                'genre' => 'F'
+            ]
+        ]
+    ],
+    [
+        'name' => 'Ghost Rider',
+        'year' => 2007,
+        'main_actor' => 'Nicolas Cage',
+        'personage' => 'Ghost Rider',
+        'poster' => 'https://image.tmdb.org/t/p/original/cmGBe9zR1Lxxn1GpaWibFn0EFPv.jpg',
+        'actors' => [
+            [
+                'name' => 'Nicolas Cage',
+                'role' => 'Ghost Rider',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Eva Mendes',
+                'role' => 'Roxanne Simpson',
+                'genre' => 'F'
+            ],
+            [
+                'name' => 'Sam Elliott',
+                'role' => 'Custode',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Peter Fonda',
+                'role' => 'Mefisto',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Rebel Wilson',
+                'role' => 'Gilr in Alley',
+                'genre' => 'F'
+            ],
+            [
+                'name' => 'Wes Bentley',
+                'role' => 'Cuore Nero',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Matt Long',
+                'role' => 'Ghost Rider',
+                'genre' => 'M'
+            ],
+            [
+                'name' => 'Raquel Alessi',
+                'role' => 'Roxanne Simpson',
+                'genre' => 'F'
+            ]
+        ]
+    ],
+    [
         'name' => 'Avatar',
-        'main_actor' => 'Samuel Henry John Worthington',
         'year' => 2009,
+        'main_actor' => 'Samuel Henry John Worthington',
         'personage' => 'Jake Sully',
         'poster' => 'https://www.triestecinema.it/locandine/AVATAR%202.jpg',
         'actors' => [

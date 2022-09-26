@@ -27,8 +27,8 @@ function actorsArray($actors)
     );
 }
 
-
 ?>
+
 
 <?php
 // Questo è il contenuto del tag <head />
@@ -37,21 +37,25 @@ include_once __DIR__ . '/components/head.php';
 
 
 <?php
-include_once __DIR__.'/components/set-actor.php';
+include_once __DIR__ . '/components/set-actor.php';
 
+
+// addNewActor($arr_movies, indice della card es: San Andreas = 2, nome del nuovo attore, ruolo del attore, genere del attore es: maschio o femmina in una lettera maiuscola);
 // Aggiungi nuovo attore
 addNewActor($arr_movies, 1, 'carlo', 'bello', 'M');
 
+
+// removeActor($arr_movies, indice della card es: Godzilla = 7, nome del attore da rimuovere);
 // Rimuovi attore
 removeActor($arr_movies, 3, 'devon aoki');
 ?>
 
 
 
-<main class="mb-8">
+<main class="my-15">
     <section>
         <div class="container px-2">
-            <ul class="row row-10-xl gap-25">
+            <ul class="row row-10-xl gap-30">
 
                 <?php foreach ($arr_movies as $v) : ?>
                     <li class="col-6 col-4-md col-3-lg col-2-xl bg-orange-7 border rounded-3 shadow-4-dark p-2 t-center transition-all duration-3 bg-orange-6-H shadow-5-light-H scale-lg-H flex f-column">
@@ -89,21 +93,24 @@ removeActor($arr_movies, 3, 'devon aoki');
 
                             <h4 class="mb-1 mt-auto">Alcuni attori del film:</h4>
 
-                            <div class="bg-violet-8 cursor-pointer">▼</div>
+                            <div class="bg-violet-8 cursor-pointer rounded-full orange-7">▼</div>
 
-                            <ul class="actors remove absolute bg-orange-5 bottom left right">
+                            <ul class="actors remove absolute bg-orange-5 bottom left right shadow-3-dark rounded-3 hidden border">
 
                                 <?php foreach ($v->actors as $actor) : ?>
-                                    <li class="border py-1 px-1">
+                                    <li class="border-b py-1 px-1">
+
                                         <p class="bold">
                                             <?= $actor->name; ?>
                                         </p>
+
                                         <p class="flex between">
                                             <?= $actor->role; ?>
                                             <span class="bold">
                                                 <?= $actor->genre; ?>
                                             </span>
                                         </p>
+
                                     </li>
                                 <?php endforeach; ?>
 
